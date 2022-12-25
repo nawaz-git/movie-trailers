@@ -6,7 +6,7 @@ const Movie = ({ name, description, id, handleClick }) => {
     const [state, setstate] = useState(false)
     return (
         <>
-            <div className={movieStyle.main} onClick={event => handleClick(id)}>
+            <div className={movieStyle.main} onClick={()=>handleClick({ name, description, id })}>
                 <span>{name}</span>
             </div>
         </>

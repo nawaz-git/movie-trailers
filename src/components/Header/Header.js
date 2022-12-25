@@ -13,10 +13,10 @@ const Header = () => {
               <span>Movie Trailers</span>
             </div>
             <div className={styles.types}>
-              <div className={comingsoon && styles.active}>
+              <div className={comingsoon ? styles.active : undefined}>
                 <button onClick={() => { setcomingsoon(!comingsoon) }}>COMING SOON</button>
               </div>
-              <div className={!comingsoon && styles.active}>
+              <div className={!comingsoon ? styles.active : undefined}>
                 <button onClick={() => { setcomingsoon(!comingsoon) }}>NOW SHOWING</button>
               </div>
             </div>
@@ -40,7 +40,7 @@ const Header = () => {
         <div className={styles.bottom}>
           <span>Applied Filters: &nbsp;</span>
           <div className={styles.filter}>English
-            <CloseIcon fontSize='small'/>
+            <CloseIcon fontSize='small' />
           </div>
         </div>
       </div>

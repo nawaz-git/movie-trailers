@@ -1,8 +1,8 @@
 .main {
-    background-color: #17141e;
-    height: 250px;
+    background-color: #000;
+    height: 350px;
     margin: 20px;
-    flex: 14% 0 0;
+    flex: 100% 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
