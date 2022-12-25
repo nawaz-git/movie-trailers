@@ -1,0 +1,11 @@
+.main {
+    background-color: #17141e;
+    height: 250px;
+    margin: 20px;
+    flex: 17% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a9aad6;
+    cursor: pointer;
+}
